@@ -1,0 +1,321 @@
+@text-title: 'Montserrat', sans-serif;
+@text-lable: 'Playfair Display', serif;
+@text: 'Hind', sans-serif;
+
+html {
+	font-size: 14px;
+}
+
+header {
+	position: relative;
+	height: 68rem;
+	overflow: hidden;
+	background-image: linear-gradient(to bottom,rgb(255, 255, 255) 51%,rgb(241, 241, 241) 51.5%);
+}
+
+.menu-button {
+	font-size: 2rem;
+}
+
+.logo {
+	span {
+		text-transform: uppercase;
+		font-family: @text-title;
+		font-weight: bold;
+		font-size: 1.4rem;
+		letter-spacing: 0.5rem; 
+	}
+
+	img {
+		vertical-align: bottom;
+		margin-right: 1rem;
+	}
+}
+
+.social {
+	
+	.social-btn {
+		width: 30%;
+	}
+}
+
+.fb {
+	background: url("image/social.png") no-repeat 10px 5px;
+	background-size: auto;
+}
+
+.tw {
+	background: url("image/social.png") no-repeat -61px 5px;
+	background-size: auto;
+}
+
+.inst {
+	background: url("image/social.png") no-repeat -140px 5px ;
+	background-size: auto;
+}
+
+.banner {
+	
+	h2 {
+		font-family: @text-title;
+		font-weight: 600;
+		font-size: 1.5rem;
+		display: inline-block;
+		position: relative;
+	}
+
+	span {
+		color: #95cac5;
+	}
+
+	
+}
+
+.banner h2:before {
+		content: "";
+		display: inline-block;
+		width: 400px;
+		height: 2px;
+		background: black;
+		position: absolute;
+		left: -460px;
+		top: 50%;
+	}
+
+.banner h2:after {
+		content: "3";
+		display: inline-block;
+		width: 1px;
+		height: 1px;
+		position: absolute;
+		top: -350px;
+		right: -300px;
+		color: #ededed;
+		font-size: 84rem;
+		border: 1px solid black;
+		padding: 0;
+		font-weight: 600;
+	}
+
+.image-title {
+	width: 370px;
+	height: 430px;
+	position: absolute;
+	box-shadow: 0px 31px 58px 5px rgba(0, 0, 0, 0.22);
+}	
+	.img-1 {
+		top: 40px;
+		background: url(image/Без-имени-2.png) no-repeat -120px 0;
+		background-size: cover;
+		z-index: 3;
+	}
+
+	.img-2 {
+		top: 140px;
+		left: 225px;
+		background: url(image/Без-имени-3.jpg) no-repeat -150px 0;
+		background-size: cover;
+		z-index: 2;
+	}
+
+	.img-3 {
+		top: 0;
+		left: 44%;
+		background: url(image/Без-имени-4.jpg) no-repeat -130px 0;
+		background-size: cover;
+		z-index: 1;
+	}
+
+	.img-4 {
+		right: 0;
+		top: 95px;
+		background: url(image/Без-имени-1.png) no-repeat;
+		background-size: cover;
+		z-index: 2;
+	}
+
+	.banner-image {
+		margin-top: 4rem;
+		height: 42rem;
+
+		h1 {
+			display: inline-block;
+			z-index: 4;
+			font-family: @text-lable;
+			font-weight: 900;
+			font-size: 3.6rem;
+			font-style: italic;
+			position: absolute;
+			left: 20%;
+			top: 40%;
+			color: #FFF;
+			span {
+				margin-left: 130px;
+			}
+		}
+		button {
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 5;
+		}
+	}
+
+.banner-main {
+	margin-top: 5rem;
+	.banner;
+	span {
+		font-family: @text-lable;
+		font-weight: bold;
+		font-style: italic;
+		text-transform: capitalize;
+	}
+
+	h2:after {
+		content: "";
+		display: inline-block;
+		width: 3rem;
+		height: 2px;
+		background: black;
+		position: absolute;
+		left: 36%;
+		top: -3.6rem;
+		transform: rotate(90deg);
+	}
+}
+
+.gallery {
+	margin-top: 4rem;
+}
+.galery-img-1 {
+	height: 518px;
+	background: url(image/Без-имени-5.jpg) no-repeat 10% 0;
+	background-size: cover;
+	margin-bottom: 1.5rem;
+}
+
+.galery-img-2 {
+	height: 400px;
+	background: url(image/Без-имени-6.jpg) no-repeat 97% 0;
+	background-size: cover;
+	margin-bottom: 1.5rem;
+	position: relative;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		width: 340px;
+		height: 2px;
+		background: #d7d7d7;
+		bottom: 0;
+		right: 0;
+		margin-bottom: -80px;
+		opacity: 0.6;
+	}
+}
+
+.galery-img-3 {
+	height: 400px;
+	background: url(image/Без-имени-7.jpg) no-repeat center;
+	background-size: cover;
+	margin-bottom: 1.5rem;
+	
+		&:after {
+		content: "";
+		position: absolute;
+		width: 340px;
+		height: 2px;
+		background: #d7d7d7;
+		margin-top: -50px;
+		opacity: 0.6;
+	}
+
+}
+
+.galery-img-4 {
+	height: 518px;
+	background: url(image/Без-имени-8.jpg) no-repeat 20% 0;
+	background-size: cover;
+	margin-bottom: 1.5rem;
+}
+
+.item-gallery {
+	margin-bottom: 2rem;
+}
+
+.container-fluid {
+	height: 23rem;
+	background: url(image/Без-имени-9.jpg) no-repeat 50% 30%;
+	background-size: cover;
+}
+
+.subscribe-title {
+	span {
+		font-family: @text-lable;
+		font-style: italic;
+		font-size: 1.2rem;
+	}
+}
+
+.card {
+	border-radius: 20px;
+	h3 {
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-bottom: 1.2rem;
+	}
+
+	a {
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-bottom: 1.2rem;
+		color: black;
+		
+	}
+}
+
+.paragraph {
+		
+	span {
+		font-size: 1.2rem;
+	}
+	.indent p {
+		margin-top: 1rem;
+		font-family: @text-lable;
+		font-size: 1.4rem;
+		font-style: italic;
+		padding-right: 7rem;
+		color: black;
+	}
+	p {
+		font-size: 1rem;
+		color: #898989;
+	}
+}
+
+.one {
+	height: 75vh;
+	position: relative;
+}
+
+.overflow {
+	z-index: 0;
+	position: absolute;
+	width: 1000px;
+	height: 450px;
+	background: #FFF;
+	top: 11%;
+	left: 15%;
+	
+	&:before {
+		content: "5";
+		position: absolute;
+		font-size: 33rem;
+		color: gray;
+		left: 80px;
+		top: -230px;
+		font-family: @text-lable;
+		font-style: italic;
+		opacity: 0.1;
+	}
+}
